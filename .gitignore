@@ -8,6 +8,9 @@
 *.tfstate
 *.tfstate.*
 
+# Exclude all .debug script files
+# *.debug
+
 # All log files
 *.log
 
