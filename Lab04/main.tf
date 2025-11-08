@@ -39,7 +39,6 @@ data "azurerm_log_analytics_workspace" "observability" {
   resource_group_name = "rg-observability-dev"
 }
 
-
 # Manage a Diagnostic Setting for an existing Resource (i.e. KeyVault)
 resource "azurerm_monitor_diagnostic_setting" "main" {
   name               = "diag-${var.application_name}-${var.environment_name}-${random_string.keyvault_suffix.result}"
